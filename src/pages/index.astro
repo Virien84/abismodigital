@@ -8,11 +8,11 @@ const pageTitle = "Abismo Digital";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <ul>
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
     {
       allPosts.map((post) => (
         <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
       ))
     }
-  </ul>
+  </div>
 </BaseLayout>
